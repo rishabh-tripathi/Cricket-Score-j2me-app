@@ -1,0 +1,142 @@
+<screen title="WorldCup2011">
+   <tabfolder id="main">       
+<tabitem id="live" label="Live Scores">
+   <scrollpane>
+   <picture src="titleimg.png"> </picture>
+   <container style="layout:inlinelayout(false,top);align:center;">
+        <picture src="line2.png"> </picture>
+        <text style="font-style:bold;"> Live Matches </text>
+        <picture src="line2.png"> </picture>
+    </container>
+    <container style="layout:inlinelayout(false,top);align:top-left;">
+        
+                        <list id="mainlist">
+			<_renderer >
+                            <![CDATA[
+                        <listItem onfocus="contactfocus" onAction="show">
+                            <picture src="logowc.png"> </picture>
+                            <textarea>@{match}</textarea>
+                        </listItem>
+                        ]]>
+                        </_renderer>                        
+
+                        </list>
+
+
+        </container>
+    <container style="layout:inlinelayout(false,top);align:center;">        
+        <text></text>
+        <picture src="line2.png"> </picture>
+        <text style="font-style:bold;"> Breaking News </text>
+        <picture src="line2.png"> </picture>
+    </container>
+    <container style="layout:inlinelayout(false,top);align:top-left;">
+                        <list id="bnewslist">
+			<_renderer>
+                            <![CDATA[
+                        <listItem onfocus="contactfocus" onAction="showBNews">
+                            <picture src="logowc.png"> </picture>
+                            <textarea style="layout:inlinelayout(false,top);align:top-left;" styled="true">@{bnews}</textarea>
+                        </listItem>
+                        ]]>
+                        </_renderer>
+
+			</list>
+                        <text></text>
+        <picture src="line2.png"> </picture>
+        </container>
+    <container style="layout:inlinelayout(false,top);align:center;">
+        <picture src="pwrdby.png"> </picture>
+    </container>  
+    </scrollpane>
+   </tabitem> 
+   
+   <tabitem label="News">
+    <scrollpane>
+   <picture src="titleimg.png"> </picture>
+   <container style="layout:inlinelayout(false,top);align:center;">
+   <picture src="line2.png"> </picture>
+   </container>
+   <container style="layout:inlinelayout(false,top);align:top-left;">
+                        <list id="newslist">
+			<_renderer>
+                            <![CDATA[
+                        <listItem onfocus="contactfocus" onAction="showNews">
+                            <picture src="logowc.png"> </picture>
+                            <textarea style="layout:inlinelayout(false,top);align:top-left;" styled="true">@{news}</textarea>
+                        </listItem>                        
+                        ]]>                        
+                        </_renderer>
+
+			</list>
+                        <text></text>
+        <picture src="line2.png"> </picture>
+        </container>
+    <container style="layout:inlinelayout(false,top);align:center;">
+        <picture src="pwrdby.png"> </picture>
+    </container>
+    </scrollpane>
+   </tabitem>
+   
+   <tabitem label="Comment">
+       <scrollpane>
+    <container style="layout:inlinelayout(false,top);align:center">
+   <picture src="titleimg.png"> </picture>
+   <container style="layout:inlinelayout(false,top);align:top-left;">
+      <picture src="line2.png"> </picture>
+      <button onAction="addComment" shortcuts="1">Comment</button>
+        <picture src="line2.png"> </picture>
+                        <list id="commentlist">
+			<_renderer >
+                            <![CDATA[
+                        <listItem onfocus="contactfocus" onAction="showComment">
+                            <picture src="logowc.png"> </picture>
+                            <textarea style="layout:inlinelayout(false,top);align:top-left;" styled="true">@{comment}</textarea>
+                        </listItem>
+                        ]]>
+                        </_renderer>
+                        </list>
+            <picture src="line2.png"> </picture>
+        </container>
+        <picture src="pwrdby.png"> </picture>
+    </container>
+    </scrollpane>
+   </tabitem>
+
+   <tabitem label="Schedule">
+       <scrollpane>
+    <container style="layout:inlinelayout(false,top);align:center">
+        <container  style="layout:inlinelayout(false,fill);align:center">
+        
+        <picture src="titleimg.png"> </picture>
+        <picture src="line2.png"> </picture>
+        <picture src="sched.png"> </picture>
+
+        </container>
+        <picture src="pwrdby.png"> </picture>
+    </container>
+    </scrollpane>
+   </tabitem>
+   
+   </tabfolder>
+
+
+   <screenFirstMenu onAction="exitConfirm">Exit</screenFirstMenu>
+    <screenSecondmenu>
+        More
+        <menuPopup>
+            <menuItem onAction="refresh">
+                Refresh
+            </menuItem>
+            <menuItem onAction="share">
+                Share
+            </menuItem>
+            <menuItem onAction="about">
+                About
+            </menuItem>
+            <menuItem onAction="feedback">
+                Feedback
+            </menuItem>
+        </menuPopup>
+    </screenSecondmenu>
+</screen>

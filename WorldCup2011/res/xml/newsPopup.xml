@@ -1,0 +1,16 @@
+<popupBox class="library" style="layout:borderlayout(false,top);align:center">
+	<scrollpane>
+        <container style="layout:inlinelayout(false,top);align:center">
+
+            <picture src="titleimg.png"> </picture>
+            <textarea style="font-style:bold;font-size:small;">@{bnews}</textarea>
+            <picture src="line2.png"> </picture>            
+            <textarea style="font-size:small;">
+                @{bnewsdetail}
+            </textarea>
+            <textarea style="font-size:small;"> - on, @{bnewspublish}</textarea>
+        </container>
+        </scrollpane>
+	<popupBoxFirstMenuItem onAction="addComment">Comment</popupBoxFirstMenuItem>
+	<popupBoxSecondMenuItem>Close</popupBoxSecondMenuItem>
+</popupBox>

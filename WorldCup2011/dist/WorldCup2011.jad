@@ -1,0 +1,11 @@
+MIDlet-1: WorldCup2011,/img/logo.png,com.killermobi.worldcup.Home
+MIDlet-Description: Cricket World Cup 2011, Live Scores, News, Fixures etc. Developed by KillerMobi.com
+MIDlet-Icon: /img/logo.png
+MIDlet-Info-URL: http://killermobi.com
+MIDlet-Jar-Size: 1016037
+MIDlet-Jar-URL: WorldCup2011.jar
+MIDlet-Name: WorldCup2011
+MIDlet-Vendor: KillerMobi.com
+MIDlet-Version: 1.0
+MicroEdition-Configuration: CLDC-1.0
+MicroEdition-Profile: MIDP-2.0

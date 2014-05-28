@@ -1,0 +1,66 @@
+<screen title="WorldCup2011">
+
+<scrollpane>
+        <container style="layout:inlinelayout(false,top);align:center">
+
+            <text id="title"> </text>
+            <picture src="line2.png"> </picture>
+            <text id="status"></text>
+            
+
+            <textarea id="misScore"></textarea>
+
+            <textarea id="inning1" style="font-style:bold;"></textarea>
+            <textarea id="score1"></textarea>            
+            <text></text>
+            <textarea id="inning2" style="font-style:bold;"></textarea>
+            <textarea id="score2"></textarea>            
+            <text></text>
+            <textarea id="update" style="font-style:bold;"></textarea>
+            <text></text>
+            
+            <picture src="line2.png"> </picture>
+            <button onAction="addCommentOnMatch" shortcuts="1">Add Comment</button>
+            <picture src="line2.png"> </picture>
+         </container>            
+
+         <container style="layout:inlinelayout(false,top);align:top-left;">        
+                        <list id="commentlist">
+			<_renderer >
+                            <![CDATA[
+                        <listItem onfocus="contactfocus" onAction="showMatchComment">
+                            <picture src="logowc.png"> </picture>
+                            <textarea style="layout:inlinelayout(false,top);align:top-left;" styled="true">@{comment}</textarea>
+                        </listItem>
+                        ]]>
+                        </_renderer>
+
+                        </list>
+        <picture src="line2.png"> </picture>
+        </container>
+
+
+        <container style="layout:inlinelayout(false,top);align:center;">
+        <picture src="pwrdby.png"> </picture>
+        </container>
+
+
+    </scrollpane>
+
+   <screenFirstMenu onAction="back">Back</screenFirstMenu>
+    <screenSecondmenu>
+        More
+        <menuPopup>
+            <menuItem onAction="share">
+                Share
+            </menuItem>
+            <menuItem onAction="feedback">
+                Feedback
+            </menuItem>
+            <menuItem onAction="exitConfirm">
+                Exit
+            </menuItem>
+      
+        </menuPopup>
+    </screenSecondmenu>
+</screen>

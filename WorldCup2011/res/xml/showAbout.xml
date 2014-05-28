@@ -1,0 +1,19 @@
+<screen title="Share with your friends">
+	<scrollpane>
+        <container style="layout:inlinelayout(false,top);align:center">
+            
+            <picture src="titleimg.png"> </picture>
+            <textarea style="font-size:small;" styled="true">
+                This app is about scores, 
+                 news and comment sharing
+                 on each and every ball.
+                 You can feel the notification
+                 for Boundries and Wicket Falls
+                 throughout the match.
+                 Powered By - KillerMobi(www.killermobi.com)
+            </textarea>
+        </container>
+        </scrollpane>
+    <screenFirstMenu onAction="feedback">Feedback</screenFirstMenu>
+    <screenSecondmenu onAction="exitConfirm">Exit</screenSecondmenu>
+    </screen>
